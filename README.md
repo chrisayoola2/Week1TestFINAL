@@ -1,8 +1,9 @@
 # Week1TestFINAL
 Coding Test Week 1
-
 1. Create a singleton class and make it thread safe.
 package com.example.week1testfinal;
+
+![Screen Shot 2019-06-08 at 10 19 58 AM](https://user-images.githubusercontent.com/51377425/59148519-de2d5e80-89d7-11e9-9bb4-852dfe44da30.png)
 
 public class mySingleton {
 
@@ -23,6 +24,7 @@ public class mySingleton {
     }
 2. Create a function to find the most occurrence of an integer value given an integer array.
 public class Problem2 {
+![Problem2](https://user-images.githubusercontent.com/51377425/59148518-de2d5e80-89d7-11e9-9036-e7e7b1f52c40.png)
 
     public static void main(String[] args) {
 
@@ -57,6 +59,7 @@ public class Problem2 {
 
 3. Simple Java Program to check or find if a number is Armstrong number or not. An Armstrong number of three digit is a number whose sum of cubes of its digit is equal to its number. For example 153 is an Armstrong number of 3 digit because 1^3+5^3+3^3 or 1+125+27=153
 public class Problem3 {
+![Problem3](https://user-images.githubusercontent.com/51377425/59148517-de2d5e80-89d7-11e9-8322-9709f66cb88e.png)
 
 
     public static void main(String[] args) {
@@ -91,7 +94,13 @@ public class Problem3 {
 }
 
 4. Complete the infected Room code challenge
+
+
+![outbreak main](https://user-images.githubusercontent.com/51377425/59148515-dd94c800-89d7-11e9-911b-a99f4579cc88.png)
+![outbreak class](https://user-images.githubusercontent.com/51377425/59148516-dd94c800-89d7-11e9-8630-8383f1e1efd0.png)
+
 class Outbreak {
+
 
     public static void main(String[] args) {
         Room[][] verticalTrue = new Room[][]{
