@@ -38,18 +38,18 @@ public class Problem2 {
     static String getOccurence(int thisArray[]) {
         String ret = "";
 
-        HashMap<Integer, Integer> myMap = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> myMap = new HashMap<Integer, Integer>(); //creates new hashmap with key and values as Integer
 
-        for (int i = 0; i < thisArray.length; i++) {
+        for (int i = 0; i < thisArray.length; i++) {             // loops and checks conditional if key is in hashmap
             if (myMap.containsKey(thisArray[i])) {
                 myMap.put(thisArray[i], myMap.get(thisArray[i]) + 1);
             } else {
-                myMap.put(thisArray[i], 1);
+                myMap.put(thisArray[i], 1); //enters key if it has not been entered in the hashmap
             }
 
         }
         for (Map.Entry entry : myMap.entrySet()) {
-            ret += (entry.getKey() + "  Occurs " + entry.getValue());
+            ret += (entry.getKey() + "  Occurs " + entry.getValue()); //prints every key and their value from hashmap
             ret += " times \n";
 
         }
@@ -139,9 +139,9 @@ class Outbreak {
     private static int checkRoom(int num, Room[][] floor, int y, int x) {
         int result = num;
 
-        if (y < 0 || y > floor.length)
+        if (y < 0 || y > floor.length) // condition to check out of bound exception
             return 0;
-        if (y < 0 || x > floor[0].length)
+        if (y < 0 || x > floor[0].length) // 
             return 0;
 
         if ((floor[y][x]).visited) return 0;
@@ -150,7 +150,7 @@ class Outbreak {
         floor[y][x].visited = true;
 
         result += 1;
-        return result + checkRoom(0, floor, y + 1, x)
+        return result + checkRoom(0, floor, y + 1, x) //recursion to check 4 axis of an infected
                 + checkRoom(0, floor, y - 1, x)
                 + checkRoom(0, floor, y, x - 1)
                 + checkRoom(0, floor, y, x + 1);
